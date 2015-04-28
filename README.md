@@ -3,8 +3,11 @@
 Build all modules - a small bootstrapping script for building puppet class skeletons. 
 
 Put this folder in your /usr/local/etc/puppet/modules catalog and go anywhere and make a test.pp with the following content:
+
 $bamList = ["puppetclass"]
+
 class {"bam":}
+
 
 If you now run that with puppet apply (future parser should be enabled in conf or you can use --parser future as a parameter to apply)
 you will see that it made a puppet class for you: puppetclass. This class is a skeleton that you can fill with puppet code. 
