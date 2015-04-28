@@ -1,6 +1,5 @@
 class bam {
 
-#$createModules = ["rabbitmq"]
 $createModules = $::bamList
 
 each ($createModules) |$metamodule| { 

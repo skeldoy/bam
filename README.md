@@ -1,6 +1,6 @@
 # bam
 
-Build all modules - a small bootstrapping script for building puppet class skeletons. 
+Build all modules - a small bootstrapping class for building puppet class skeletons. 
 
 Put this folder in your /usr/local/etc/puppet/modules catalog and go anywhere and make a test.pp with the following content:
 
@@ -28,11 +28,11 @@ By separating the installation, service and config-code you will get a much more
 even start looking good on graphs ;)
 
 
-bam takes an array as a parameter for classes to build - so you can build many skeletons if you like.
+bam takes an array as a parameter for classes to build - so you can build many skeletons if you like. It takes the classnames as the array $::bamList but you can change that behaviour if you like.
 
 
 Keep in mind that you might want to quickly change bam itself. Your organisation might already have a way of doing things - secret
-recipes that you might want to add to bam. I suggest using bam to build a class that you call "protoclasser" and use that to build a more advanced bam.
+recipes that you might want to add to bam. I suggest using bam to build a class that you call "protoclasser" and use that to build a more advanced tool.
 And that is what bam is - the very first step of metaprogramming puppet.
 
 
